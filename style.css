@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main__login{
+    width: 100vw;
+    height: 100vh;
+    background: #001F5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card__login{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #FCF81A;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card__login > h1{
+    color: #001F5F;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.card__login > h2{
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+.info__login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.info__login > input{
+   width: 100%;
+   border: none;
+   border-radius: 20px;
+   padding: 15px;
+   font-size: 12pt;
+   box-shadow: 0px 10px 40px #00000056;
+   outline: none;
+   box-sizing: border-box;
+}
+
+.info__login > label{
+    margin-bottom: 10px;
+    color: #001F5F;
+}
+
+
+.option__login{
+    width: 100%;
+
+    padding: 15px;
+    color: #001F5F;
+    outline: none;
+    margin-bottom: 25px;
+ }
+
+.option__login > label{
+    font-size: 10pt;
+}
+
+ .option__login > a{
+    margin-top: 5px;
+    float: right;
+    color: rgb(156, 187, 187);
+    font-size: 7pt;
+ }
+
+.checkbox{
+    margin: 20px 0;
+    font-size: 10pt;
+}
+
+.btn-login{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: 700;
+    background-color: #0b3a97;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: azure;
+}
+
+.img__conta{
+    width: 600px;
+    padding: 30px;
+    margin-right: 80px;
+}
+
+
+@media screen and (max-width: 950px){
+
+    .img__conta{
+        width: 350px;
+    }
+    
+    
+    .card__login{
+        width: 90%;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .main__login{
+        flex-direction: column;
+    }
+    
+    .img__conta{
+        margin-left: 108px;
+        width: 300px;
+    }
+
+    .card__login{
+        width: 90%;
+        height: auto;
+    }
+
+}
