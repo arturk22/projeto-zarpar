@@ -1,0 +1,116 @@
+.pacotes {
+    padding: 3rem 0;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.pacotes__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+    grid-area: conteudo;
+}
+
+.pacotes__card {
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    
+}
+
+.pacotes__card:last-child{
+    margin-right: 0;
+}
+ 
+.pacotes__card___imagem {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.pacotes__card___corpo {
+    display: grid;
+    grid-area: card-corpo;
+    grid-row-gap: .5rem;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto;
+    padding: .75rem;
+}
+
+.pacotes__card___titulo {
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.pacotes__card___data {
+    color: #808080;
+    font-size: .9rem;
+}
+
+.pacotes__card___descricao {
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.pacotes__titulo {
+    font-weight: 500;
+}
+
+.pacotes__icone {
+    margin-right: .25rem;
+}
+
+.pacotes__cabecalho {
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pacotes__botao {
+    background: transparent;
+    border: none;
+    color: #333333;
+}
+
+@media screen and (min-width: 0){
+    .pacotes__conteudo{
+        flex-direction: column;
+    }
+    .pacotes__card{
+        grid-template-rows: 150px auto;
+        margin-bottom: 3rem;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pacotes__card{
+        grid-template-rows: 173px auto;
+        margin-right: 1rem;
+        width: calc(50% - 1rem);
+    }
+    .pacotes__conteudo{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pacotes__card{
+        width: calc(33.33% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pacotes__card{
+        margin-bottom: 0;
+        width: calc(20% - 1rem);
+    }
+}
